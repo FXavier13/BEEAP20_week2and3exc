@@ -1,7 +1,6 @@
 git config user.email "francis.manyonje@student.hamk.fi"
 git config user.name "FXavier13"
 
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
