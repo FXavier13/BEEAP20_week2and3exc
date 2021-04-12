@@ -1,3 +1,7 @@
+git config user.email "francis.manyonje@student.hamk.fi"
+git config user.name "FXavier13"
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,7 +16,7 @@ from matplotlib.figure import Figure
 class App:
     def __init__(self, root):
         # setting title
-        root.title("undefined")
+        root.title("Energy Usage 2010")
         # setting window size
         width = 600
         height = 500
