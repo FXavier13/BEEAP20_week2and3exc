@@ -1,6 +1,3 @@
-git config user.email "francis.manyonje@student.hamk.fi"
-git config user.name "FXavier13"
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -32,8 +29,8 @@ class App:
         self.__GButton_450["font"] = ft
         self.__GButton_450["fg"] = "#000000"
         self.__GButton_450["justify"] = "center"
-        self.__GButton_450["text"] = "Button"
-        self.__GButton_450.place(x=70, y=50, width=70, height=25)
+        self.__GButton_450["text"] = "Load CSV File"
+        self.__GButton_450.place(x=70, y=50, width=100, height=30)
         self.__GButton_450["command"] = self.__GButton_450_command
 
         self.__GListBox_563 = ttk.Combobox(root)
