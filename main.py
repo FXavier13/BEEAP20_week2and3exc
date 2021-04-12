@@ -30,7 +30,7 @@ class App:
         self.__GButton_450["fg"] = "#000000"
         self.__GButton_450["justify"] = "center"
         self.__GButton_450["text"] = "Load CSV File"
-        self.__GButton_450.place(x=100, y=50, width=150, height=45)
+        self.__GButton_450.place(x=70, y=50, width=70, height=35)
         self.__GButton_450["command"] = self.__GButton_450_command
 
         self.__GListBox_563 = ttk.Combobox(root)
