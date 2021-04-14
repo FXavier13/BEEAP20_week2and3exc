@@ -37,13 +37,13 @@ class App:
         self.__Cities_List.place(x=350, y=50, width=80, height=25)
         self.__Cities_List.bind("<<ComboboxSelected>>", self.__comboBoxCb)
 
-        self.__GLabel_544 = tk.Label(root)
+        self.__FileName_Label = tk.Label(root)
         ft = tkFont.Font(family='Times', size=10)
-        self.__GLabel_544["font"] = ft
-        self.__GLabel_544["fg"] = "#333333"
-        self.__GLabel_544["justify"] = "center"
-        self.__GLabel_544["text"] = "label"
-        self.__GLabel_544.place(x=150, y=50, width=70, height=25)
+        self.__FileName_Label["font"] = ft
+        self.__FileName_Label["fg"] = "#333333"
+        self.__FileName_Label["justify"] = "center"
+        self.__FileName_Label["text"] = "Label"
+        self.__FileName_Label.place(x=150, y=50, width=70, height=25)
 
         # these canvases are broken, fix them
         self.__GLineEdit_517 = tk.Canvas(root)
