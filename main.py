@@ -34,7 +34,6 @@ class App:
         self.__Load_CSV["command"] = self.__Load_CSV_command
 
         self.__Cities_List= ttk.Combobox(root)
-        self.__Cities_List["text"] = "List of Cities"
         self.__Cities_List.place(x=350, y=50, width=80, height=25)
         self.__Cities_List.bind("<<ComboboxSelected>>", self.__comboBoxCb)
 
