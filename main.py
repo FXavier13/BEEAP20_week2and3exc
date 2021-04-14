@@ -42,7 +42,7 @@ class App:
         self.__FileName_Label["font"] = ft
         self.__FileName_Label["fg"] = "#333333"
         self.__FileName_Label["justify"] = "center"
-        self.__FileName_Label["text"] = "Energy Usage 2010"
+        self.__FileName_Label["text"] = "Label"
         self.__FileName_Label.place(x=150, y=50, width=70, height=25)
 
         # these canvases are broken, fix them
