@@ -25,7 +25,7 @@ class App:
 
         self.__Load_CSV = tk.Button(root)
         self.__Load_CSV["bg"] = "#efefef"
-        ft = tkFont.Font(family='Times', size=12)
+        ft = tkFont.Font(family='Times', size=8)
         self.__Load_CSV["font"] = ft
         self.__Load_CSV["fg"] = "#000000"
         self.__Load_CSV["justify"] = "center"
