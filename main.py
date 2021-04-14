@@ -33,9 +33,9 @@ class App:
         self.__Load_CSV.place(x=70, y=50, width=70, height=35)
         self.__Load_CSV["command"] = self.__Load_CSV_command
 
-        self.__GListBox_563 = ttk.Combobox(root)
-        self.__GListBox_563.place(x=350, y=50, width=80, height=25)
-        self.__GListBox_563.bind("<<ComboboxSelected>>", self.__comboBoxCb)
+        self.__Cities_List= ttk.Combobox(root)
+        self.__Cities_List.place(x=350, y=50, width=80, height=25)
+        self.__Cities_List.bind("<<ComboboxSelected>>", self.__comboBoxCb)
 
         self.__GLabel_544 = tk.Label(root)
         ft = tkFont.Font(family='Times', size=10)
@@ -63,7 +63,7 @@ class App:
         try:
             self.__df = pd.read_csv(filePath)
             self.__df = self.__df.dropna()
-            self.__GListBox_563['values'] = list(self.__df['COMMUNITY AREA NAME'].unique())
+            self.__Cities_List['values'] = list(self.__df['COMMUNITY AREA NAME'].unique())
         except:
             # quick and dirty, desired behavior would be to show a notification pop up that says
             # "nope!"
