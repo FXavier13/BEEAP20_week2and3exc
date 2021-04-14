@@ -23,15 +23,15 @@ class App:
         root.geometry(alignstr)
         root.resizable(width=False, height=False)
 
-        self.Load_CSV = tk.Button(root)
-        self.Load_CSV["bg"] = "#efefef"
+        self.__Load_CSV = tk.Button(root)
+        self.__Load_CSV["bg"] = "#efefef"
         ft = tkFont.Font(family='Times', size=12)
-        self.Load_CSV["font"] = ft
-        self.Load_CSV["fg"] = "#000000"
-        self.Load_CSV["justify"] = "center"
-        self.Load_CSV["text"] = "Load CSV File"
-        self.Load_CSV.place(x=70, y=50, width=70, height=35)
-        self.Load_CSV["command"] = self.Load_CSV_command
+        self.__Load_CSV["font"] = ft
+        self.__Load_CSV["fg"] = "#000000"
+        self.__Load_CSV["justify"] = "center"
+        self.__Load_CSV["text"] = "Load CSV File"
+        self.__Load_CSV.place(x=70, y=50, width=70, height=35)
+        self.__Load_CSV["command"] = self.Load_CSV_command
 
         self.__GListBox_563 = ttk.Combobox(root)
         self.__GListBox_563.place(x=350, y=50, width=80, height=25)
