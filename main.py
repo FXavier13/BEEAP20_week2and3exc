@@ -45,6 +45,20 @@ class App:
         self.__FileName_Label["text"] = "Energy Usage 2010"
         self.__FileName_Label.place(x=150, y=50, width=110, height=25)
 
+        self.__FileName_Label.pack(side=tk.LEFT, pady=15)
+
+
+        self.__CitySelect_Label = tk.Label(root)
+        ft = tkFont.Font(family='Times', size=10)
+        self.__CitySelect_Label["font"] = ft
+        self.__CitySelect_Label["fg"] = "#333333"
+        self.__CitySelect_Label["justify"] = "center"
+        self.__CitySelect_Label["text"] = "Select City"
+        self.__CitySelect_Label.place(x=150, y=50, width=110, height=25)
+
+        self.__FileName_Label.pack(side=tk.LEFT, pady=15)
+
+
         # these canvases are broken, fix them
         self.__GLineEdit_517 = tk.Canvas(root)
         self.__GLineEdit_517.place(x=50, y=130, width=234, height=140)
