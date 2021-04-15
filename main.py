@@ -41,7 +41,6 @@ class App:
        
         for i in range(1):
             for j in range(2):
-                frame.grid(row=i, column=j, padx=15, pady=15)
         self.__FileName_Label = tk.Label(root)
         ft = tkFont.Font(family='Times', size=10)
         self.__FileName_Label["font"] = ft
@@ -51,7 +50,7 @@ class App:
         self.__FileName_Label.place(x=150, y=50, width=110, height=25)
 
         self.__FileName_Label.pack(side=tk.LEFT, row=i, column=j, padx=15, pady=15)
-        self.__FileName_Label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
+        self.__FileName_Label = tk.Label(text=f"Row {i}\nColumn {j}")
         self.__FileName_Label.pack()
 
 
@@ -64,12 +63,11 @@ class App:
         self.__CitySelect_Label.place(x=150, y=50, width=110, height=25)
 
         self.__CitySelect_Label.pack(side=tk.RIGHT, row=i, column=j, padx=15, pady=15)
-        self.__CitySelect_Label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
+        self.__CitySelect_Label = tk.Label(text=f"Row {i}\nColumn {j}")
         self.__CitySelect_Label.pack()          
        
         
         
-
 
         # these canvases are broken, fix them
         self.__GLineEdit_517 = tk.Canvas(root)
