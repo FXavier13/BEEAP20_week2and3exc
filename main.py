@@ -41,7 +41,7 @@ class App:
        
         for i in range(1):
             for j in range(2):
-        self.__FileName_Label = tk.Label(root)
+            self.__FileName_Label = tk.Label(root)
         ft = tkFont.Font(family='Times', size=10)
         self.__FileName_Label["font"] = ft
         self.__FileName_Label["fg"] = "#333333"
