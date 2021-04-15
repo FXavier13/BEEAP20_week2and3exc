@@ -62,13 +62,14 @@ class App:
         for i in range(1):
             for j in range(2):
                 frame = tk.Frame(
-                    master=window,
-                        relief=tk.RAISED,
+                    relief=tk.RAISED,
                              borderwidth=1)
         frame.grid(row=i, column=j, padx=15, pady=15)
         CitySelect_Label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
         FileName_Label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
-        label.pack()
+        FileName_Label.pack()
+        CitySelect_Label.pack()
+
 
 
         # these canvases are broken, fix them
