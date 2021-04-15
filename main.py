@@ -54,7 +54,7 @@ class App:
         self.__CitySelect_Label["fg"] = "#333333"
         self.__CitySelect_Label["justify"] = "center"
         self.__CitySelect_Label["text"] = "Select City"
-        self.__CitySelect_Label.place(x=150, y=50, width=110, height=25)
+        self.__CitySelect_Label.place(x=300, y=100, width=110, height=25)
 
         self.__FileName_Label.pack(side=tk.LEFT, pady=15)
 
