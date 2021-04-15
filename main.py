@@ -59,6 +59,19 @@ class App:
         self.__FileName_Label.pack(side=tk.LEFT, pady=15)
 
 
+        for i in range(1):
+    for j in range(2):
+        frame = tk.Frame(
+            master=window,
+            relief=tk.RAISED,
+            borderwidth=1
+        )
+        frame.grid(row=i, column=j, padx=15, pady=15)
+        CitySelect_Label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
+        FileName_Label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
+        label.pack()
+
+
         # these canvases are broken, fix them
         self.__GLineEdit_517 = tk.Canvas(root)
         self.__GLineEdit_517.place(x=50, y=130, width=234, height=140)
