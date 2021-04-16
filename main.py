@@ -84,7 +84,7 @@ class App:
     # top right: bar chart, average THERM by month
     # bottom left and bottom right up to you
     def __comboBoxCb(self, event=None):
-        self.__subdf = self.__df.loc[self.__df['COMMUNITY AREA NAME'] == self.__GListBox_563.get()]
+        self.__subdf = self.__df.loc[self.__df['COMMUNITY AREA NAME'] == self.__Cities_List.get()] #"App has no attribute GListBox" error fixed by changing the code to the new name "__Cities_List"
         print(self.__subdf.head())
         fig1 = Figure(figsize=(self.__GLineEdit_392.winfo_width, self.__GLineEdit_392.winfo_height), dpi=100)
         ax1 = fig1.add_subplot(111)
