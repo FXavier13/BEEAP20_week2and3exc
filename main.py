@@ -34,7 +34,7 @@ class App:
         self.__Load_CSV["command"] = self.__Load_CSV_command
 
         self.__Cities_List= ttk.Combobox(root)
-        self.__Cities_List["justify"] = "left" #Getting the List Box to display all characters of the City name
+        self.__Cities_List["justify"] = "center" #Getting the List Box to display all characters of the City name
         self.__Cities_List.place(x=400, y=50, width=120, height=25)
         self.__Cities_List.bind("<<ComboboxSelected>>", self.__comboBoxCb)
 
