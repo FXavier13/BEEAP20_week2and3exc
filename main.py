@@ -52,7 +52,7 @@ class App:
         self.__CitySelect_Label["fg"] = "#333333"
         self.__CitySelect_Label["justify"] = "center"
         self.__CitySelect_Label["text"] = "Select City"
-        self.__CitySelect_Label.place(x=200, y=50, width=110, height=25)
+        self.__CitySelect_Label.place(x=250, y=50, width=110, height=25)
         
 
         # these canvases are broken, fix them
