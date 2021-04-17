@@ -55,10 +55,72 @@ class App:
         self.__CitySelect_Label["text"] = "Select City"
         self.__CitySelect_Label.place(x=300, y=50, width=110, height=25)
         
+        #TRIAL CODE FOR CANVAS 1
+
+        #The Energy Usage 2010 Dataset that will be used to obtain the plots 
+        OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
+        OriginalDataSet=OriginalDataSet.dropna()
+        OriginalDataSet.head()
+        print(OriginalDataSet)
+
+        #Mothly KWH Average
+        OriginalDataSet[:,OriginalDataSet.columns.get_loc('KWH JANUARY 2010','KWH FEBRUARY 2010','KWH MARCH 2010','KWH APRIL 2010','KWH MAY 2010','KWH JUNE 2010','KWH JULY 2010','KWH AUGUST 2010','KWH SEPTEMBER 2010','KWH OCTOBER 2010','KWH NOVEMBER 2010','KWH DECEMBER 2010')].mean()
+        
+        #Monthly THERM Average
+        OriginalDataSet[:,OriginalDataSet.columns.get_loc('THERM JANUARY 2010','THERM FEBRUARY 2010','THERM MARCH 2010','TERM APRIL 2010','THERM MAY 2010','THERM JUNE 2010','THERM JULY 2010','THERM AUGUST 2010','THERM SEPTEMBER 2010','THERM OCTOBER 2010','THERM NOVEMBER 2010','THERM DECEMBER 2010')].mean()
+
+        #KWH Standard Deviation
+
+        #THERM Standard Deviation
+
+
+        #Creating the Plot Function Class
+
+        def plot():
+            fig, axs = plt.subplots(2, 2,sharex=True)
+            fig.suptitle('Energy Usage Summary')
+            x=np.linspace(100,1000,num=200)
+            y=np.linspace(100,2000,num=200)
+
+        #
+        plt.hist(OriginalDataSet.Monthly KWH Average',bins=100,density=True, histtype='bar',color='#4257f5')
+        axs[0, 0].plot(x, y,color='#4257f5')
+        axs[0, 0].set_title('Monthly KWH Average')
+        Monthly KWH Average = fig.add_subplot(111)
+        Monthly KWH Average.plot(x,y)
+
+        #OR should I use this call?
+        plt.show()
+
+
+        self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
+        self.__Monthly_KWH_Average = tk.Canvas(root)
+        self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
+        Monthly_KWH_Average.draw() #Or Canvas.draw()?
+
+        #Placing the Canvas onto the TKinter Window
+        Monthly_KWH_Average.get_tk_widget().pack()
+        
+        #Creating the MatplotLib Tool Bar
+        toolbar=NavigationToolbar2Tk(Monthly_KWH_Average,root)
+
+        #Placing the Tool Bar onto the Tkinter Window
+        Monthly_KWH_Average.get_tk_widget().pack()
+
+        #Button for displaying the plot
+        Energy_Usage_Summary_button=Button(self=root, command = plot, height =2, width = 10,text ="Plot Summary")
+
+        #Placing the button onto the main window
+        Energy_Usage_Summary_button.pack()
+        
+        root.mainloop() #Running the GUI
+
+        #END OF TRIAL CODE
 
         # these canvases are broken, fix them
-        self.__GLineEdit_517 = tk.Canvas(root)
-        self.__GLineEdit_517.place(x=50, y=130, width=234, height=140)
+        self.__Monthly_KWH_Average = tk.Canvas(root)
+        self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
+        Monthly_KWH_Average.draw()
 
         self.__GLineEdit_985 = tk.Canvas(root)
         self.__GLineEdit_985.place(x=310, y=130, width=239, height=139)
