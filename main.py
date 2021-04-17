@@ -88,7 +88,6 @@ class App:
         axs[0, 0].set_title('Monthly KWH Average')
         Monthly KWH Average = fig.add_subplot(111)
         Monthly KWH Average.plot(x,y)
-
         plt.show() 
 
 
