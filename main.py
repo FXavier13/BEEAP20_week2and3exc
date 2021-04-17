@@ -82,14 +82,13 @@ class App:
             x=np.linspace(100,1000,num=200)
             y=np.linspace(100,2000,num=200)
 
-        #Monthly KWH Average Canvas
+        #Monthly KWH Canvas
         plt.hist(OriginalDataSet.Monthly KWH Average',bins=100,density=True, histtype='bar',color='#4257f5')
         axs[0, 0].plot(x, y,color='#4257f5')
         axs[0, 0].set_title('Monthly KWH Average')
         Monthly KWH Average = fig.add_subplot(111)
         Monthly KWH Average.plot(x,y)
         plt.show() 
-
 
         self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
         self.__Monthly_KWH_Average = tk.Canvas(root)
