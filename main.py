@@ -82,6 +82,7 @@ class App:
             x=np.linspace(100,1000,num=200)
             y=np.linspace(100,2000,num=200)
 
+
         #Monthly KWH Canvas
         plt.hist(OriginalDataSet.Monthly KWH Average',bins=100,density=True, histtype='bar',color='#4257f5')
         axs[0, 0].plot(x, y,color='#4257f5')
@@ -95,25 +96,30 @@ class App:
         self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
         Monthly_KWH_Average.draw() #Or Canvas.draw()?
 
+
         #Placing the Canvas onto the TKinter Window
         Monthly_KWH_Average.get_tk_widget().pack()
-        
+
+
         #Creating the MatplotLib Tool Bar
         toolbar=NavigationToolbar2Tk(Monthly_KWH_Average,root)
+
 
         #Placing the Tool Bar onto the Tkinter Window
         Monthly_KWH_Average.get_tk_widget().pack()
 
+
         #Button for displaying the plot
         Energy_Usage_Summary_button=Button(self=root, command = plot, height =2, width = 10,text ="Plot Summary")
+
 
         #Placing the button onto the main window
         Energy_Usage_Summary_button.pack()
         
         root.mainloop() #Running the GUI
 
-        #END OF TRIAL CODE
 
+        #END OF TRIAL CODE
 
 
         # these canvases are broken, fix them
