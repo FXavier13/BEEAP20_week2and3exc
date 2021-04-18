@@ -12,11 +12,13 @@ from matplotlib.figure import Figure
 
 class App:
     def __init__(self, root):
-        # setting title
-        self.root = OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
-        self.root = OriginalDataSet = OriginalDataSet.dropna()
-        root.title("Energy Usage 2010")
+        self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
+        self.OriginalDataSet=OriginalDataSet.dropna()
+        OriginalDataSet.head()
+        print(OriginalDataSet)
         
+        # setting title
+        root.title("Energy Usage 2010")
         # setting window size
         width = 650
         height = 500
@@ -86,6 +88,11 @@ class Plot:
             fig.suptitle('Energy Usage Summary')
             x=np.linspace(100,1000,num=200)
             y=np.linspace(100,2000,num=200)
+            self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
+            self.OriginalDataSet=OriginalDataSet.dropna()
+            OriginalDataSet.head()
+            print(OriginalDataSet)
+                        
 
         #Monthly KWH Canvas
         plt.hist(OriginalDataSet.Monthly_KWH_Average,bins=100,density=True,histtype='bar')
