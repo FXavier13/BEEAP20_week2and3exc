@@ -146,7 +146,7 @@ class Plot:
         self.__GLineEdit_700.place(x=310, y=290, width=234, height=158)
 
         def __Load_CSV_command(self,root):
-        filePath = fd.askopenfilename(initialdir='.')
+            filePath = fd.askopenfilename(initialdir='.')
         try:
             self.__df = pd.read_csv(filePath)
             self.__df = self.__df.dropna()
