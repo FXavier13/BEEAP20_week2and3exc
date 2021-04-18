@@ -11,12 +11,11 @@ from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationTool
 from matplotlib.figure import Figure
 
 class App:
-    def __init__(self, root):
+    def __init__(self, root,OriginalDataSet):
         self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
         self.OriginalDataSet=OriginalDataSet.dropna()
         OriginalDataSet.head()
         print(OriginalDataSet)
-        
         # setting title
         root.title("Energy Usage 2010")
         # setting window size
@@ -82,12 +81,14 @@ class App:
 
         #Creating the Plot Function Class
 class Plot:
-        def __init__(self, root): 
+        def __init__(self, root,OriginalDataSet): 
             fig=Figure(figsize=(3,3),dpi=100)
             fig, axs = plt.subplots(2, 2,sharex=True)
             fig.suptitle('Energy Usage Summary')
-            x=np.linspace(100,1000,num=200)
-            y=np.linspace(100,2000,num=200)
+            x=[i**2 for i in range (101)]
+            y=[i**2 for i in range (101)]
+            
+            
         def OriginalDataSet(self,root):    
             self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
             self.OriginalDataSet=OriginalDataSet.dropna()
