@@ -81,20 +81,24 @@ class App:
 
         #Creating the Plot Function Class
 class Plot:
-        def __init__(self, root,OriginalDataSet): 
+        def __init__(self, root,OriginalDataSet,x,y): 
             fig=Figure(figsize=(3,3),dpi=100)
             fig, axs = plt.subplots(2, 2,sharex=True)
             fig.suptitle('Energy Usage Summary')
-            x=[i**2 for i in range (101)]
-            y=[i**2 for i in range (101)]
-            
+            self.x=[i**2 for i in range (101)]
+            self.y=[i**2 for i in range (101)]
+
             
         def OriginalDataSet(self,root):    
             self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
             self.OriginalDataSet=OriginalDataSet.dropna()
             OriginalDataSet.head()
             print(OriginalDataSet)
-                        
+
+        #Creating a Monthly KWH Average Class
+        class Monthly_KWH_Average('Energy_Usage_2010.csv'):
+
+
         #Monthly KWH Canvas
         plt.hist(OriginalDataSet.Monthly_KWH_Average,bins=100,density=True,histtype='bar')
         axs[0, 0].plot(x, y,color='#4257f5')
