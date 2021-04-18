@@ -81,14 +81,14 @@ class App:
 
         #Creating the Plot Function Class
 class Plot:
-        def __init__(self, root,OriginalDataSet,x,y,axs): 
+        def __init__(self, root,OriginalDataSet:"Plot",x:"Plot",y:"Plot",axs:"Plot",fig:"Plot"): 
             fig=Figure(figsize=(3,3),dpi=100)
             fig, axs = plt.subplots(2, 2,sharex=True)
             fig.suptitle('Energy Usage Summary')
             self.x=[i**2 for i in range (101)]
             self.y=[i**2 for i in range (101)]
-            self.axs= (x,y)
-            self.fig = Energy_Usage_2010
+            self.axs= axs
+            self.fig = fig
 
             
         def OriginalDataSet(self,root):    
@@ -111,13 +111,13 @@ class Plot:
 
 
         #Establishing labels for x and y axes
-        for ax in axs.flat:
-            ax.set(xlabel='Months', ylabel='Consumption')
+                for ax in axs.flat:
+                ax.set(xlabel='Months', ylabel='Consumption')
 
 
         #Making x axis invisible
-        for ax in axs.flat:
-            ax.label_outer()
+                for ax in axs.flat:
+                ax.label_outer()
 
         Monthly_KWH_Average.plot(x,y)
         plt.show() 
