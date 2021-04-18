@@ -137,7 +137,7 @@ toolbar=NavigationToolbar2Tk(Monthly_KWH_Average,OriginalDataSet=pd.read_csv('En
 Monthly_KWH_Average.get_tk_widget().pack()
 
         #Button for displaying the plot
-Energy_Usage_Summary_button=tk.Button(self=root, command = plot, height =2, width = 10,text ="Plot Summary")
+self _Energy_Usage_Summary_button=tk.Button(self=root, command = plot, height =2, width = 10,text ="Plot Summary")
 
         #Placing the button onto the main window
 Energy_Usage_Summary_button.pack()
