@@ -78,6 +78,7 @@ class App:
         #Creating the Plot Function Class
 
         def plot():
+            fig=Figure(figsize=(3,3),dpi=100)
             fig, axs = plt.subplots(2, 2,sharex=True)
             fig.suptitle('Energy Usage Summary')
             x=np.linspace(100,1000,num=200)
