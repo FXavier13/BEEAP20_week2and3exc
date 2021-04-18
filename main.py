@@ -150,7 +150,7 @@ root.mainloop() #Running the GUI
 
         # these canvases are broken, fix them
 self.__Monthly_KWH_Average = tk.Canvas(root)
-        self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
+self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
         Monthly_KWH_Average.draw()
 
         self.__GLineEdit_985 = tk.Canvas(root)
