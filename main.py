@@ -88,6 +88,7 @@ class Plot:
             self.x=[i**2 for i in range (101)]
             self.y=[i**2 for i in range (101)]
             self.axs= (x,y)
+            self.fig = Energy Usage 2010
 
             
         def OriginalDataSet(self,root):    
