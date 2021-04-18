@@ -84,7 +84,7 @@ class App:
 
 
         #Monthly KWH Canvas
-        plt.hist(OriginalDataSet.Monthly KWH Average',bins=100,density=True, histtype='bar',color='#4257f5')
+        plt.hist(OriginalDataSet.Monthly KWH Average',bins=100,density=True,histtype='bar',color='#4257f5')
         axs[0, 0].plot(x, y,color='#4257f5')
         axs[0, 0].set_title('Monthly KWH Average')
         Monthly KWH Average = fig.add_subplot(111)
