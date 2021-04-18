@@ -140,7 +140,7 @@ Monthly_KWH_Average.get_tk_widget().pack()
 Energy_Usage_Summary_button=Button(self=root, command = plot, height =2, width = 10,text ="Plot Summary")
 
         #Placing the button onto the main window
-        Energy_Usage_Summary_button.pack()
+Energy_Usage_Summary_button.pack()
         
         root.mainloop() #Running the GUI
 
