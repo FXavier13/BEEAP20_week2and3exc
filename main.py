@@ -127,7 +127,7 @@ Monthly_KWH_Average.draw() #Or Canvas.draw()?
 
         #Placing the Canvas onto the TKinter Window
         
-        Monthly_KWH_Average.get_tk_widget().pack()
+Monthly_KWH_Average.get_tk_widget().pack()
         
         #Creating the MatplotLib Tool Bar
         
