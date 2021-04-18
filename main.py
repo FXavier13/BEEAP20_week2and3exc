@@ -87,7 +87,7 @@ class Plot:
             fig.suptitle('Energy Usage Summary')
             self.x=[i**2 for i in range (101)]
             self.y=[i**2 for i in range (101)]
-            self.axs=axes x and y
+            self.axs= (x,y)
 
             
         def OriginalDataSet(self,root):    
