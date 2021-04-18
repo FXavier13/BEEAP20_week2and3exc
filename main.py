@@ -81,12 +81,13 @@ class App:
 
         #Creating the Plot Function Class
 class Plot:
-        def __init__(self, root,OriginalDataSet,x,y): 
+        def __init__(self, root,OriginalDataSet,x,y,axs): 
             fig=Figure(figsize=(3,3),dpi=100)
             fig, axs = plt.subplots(2, 2,sharex=True)
             fig.suptitle('Energy Usage Summary')
             self.x=[i**2 for i in range (101)]
             self.y=[i**2 for i in range (101)]
+            self.axs=axes x and y
 
             
         def OriginalDataSet(self,root):    
