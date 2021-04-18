@@ -13,6 +13,7 @@ from matplotlib.figure import Figure
 class App:
     def __init__(self, root):
         # setting title
+        self.root = Energy_Usage_2010
         root.title("Energy Usage 2010")
         # setting window size
         width = 650
@@ -145,7 +146,7 @@ class Plot:
         self.__GLineEdit_700 = tk.Canvas(root)
         self.__GLineEdit_700.place(x=310, y=290, width=234, height=158)
 
-        def __Load_CSV_command(self,root):
+        def __Load_CSV_command(self):
             filePath = fd.askopenfilename(initialdir='.')
         try:
             self.__df = pd.read_csv(filePath)
@@ -162,10 +163,10 @@ class Plot:
     # bottom left and bottom right up to you
         def __comboBoxCb(self, event=None):
             self.__subdf = self.__df.loc[self.__df['COMMUNITY AREA NAME'] == self.__Cities_List.get()]
-            print(self.__subdf.head())
-            fig1 = Figure(figsize=(self.__GLineEdit_392.winfo_width, self.__GLineEdit_392.winfo_height), dpi=100)
-            ax1 = fig1.add_subplot(111)
-            self.__subdf.iloc[:, range(self.__subdf.columns.get_loc['KWH JANUARY 2010'], 12)].mean().plot.bar(ax=ax1)
+        print(self.__subdf.head())
+        fig1 = Figure(figsize=(self.__GLineEdit_392.winfo_width, self.__GLineEdit_392.winfo_height), dpi=100)
+        ax1 = fig1.add_subplot(111)
+        self.__subdf.iloc[:, range(self.__subdf.columns.get_loc['KWH JANUARY 2010'], 12)].mean().plot.bar(ax=ax1)
 
 
 if __name__ == "__main__":
