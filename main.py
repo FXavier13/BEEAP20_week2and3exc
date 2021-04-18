@@ -131,7 +131,7 @@ Monthly_KWH_Average.get_tk_widget().pack()
         
         #Creating the MatplotLib Tool Bar
         
-        toolbar=NavigationToolbar2Tk(Monthly_KWH_Average,root)
+toolbar=NavigationToolbar2Tk(Monthly_KWH_Average,root)
 
         #Placing the Tool Bar onto the Tkinter Window
         Monthly_KWH_Average.get_tk_widget().pack()
