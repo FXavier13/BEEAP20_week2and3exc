@@ -120,10 +120,10 @@ class Plot:
                     ax.label_outer()
 plt.show() 
 
-    self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
-    self.__Monthly_KWH_Average = tk.Canvas(root)
-    self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
-    Monthly_KWH_Average.draw() #Or Canvas.draw()?
+self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
+self.__Monthly_KWH_Average = tk.Canvas(root)
+self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
+Monthly_KWH_Average.draw() #Or Canvas.draw()?
 
         #Placing the Canvas onto the TKinter Window
         
