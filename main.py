@@ -100,10 +100,10 @@ class Plot:
 
 
         #Monthly KWH Canvas
-        plt.hist(OriginalDataSet.Monthly_KWH_Average,bins=100,density=True,histtype='bar')
-        axs[0, 0].plot(x, y,color='#4257f5')
-        axs[0, 0].set_title('Monthly KWH Average')
-        Monthly_KWH_Average = fig.add_subplot(111)
+            plt.hist(OriginalDataSet.Monthly_KWH_Average,bins=100,density=True,histtype='bar')
+            axs[0, 0].plot(x, y,color='#4257f5')
+            axs[0, 0].set_title('Monthly KWH Average')
+            Monthly_KWH_Average = fig.add_subplot(111)
 
 
         #Establishing labels for x and y axes
