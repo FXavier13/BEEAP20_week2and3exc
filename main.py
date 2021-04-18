@@ -176,7 +176,7 @@ def __Load_CSV_command(self):
     # top left: bar chart, average KWH by month
     # top right: bar chart, average THERM by month
     # bottom left and bottom right up to you
-        def __comboBoxCb(self, event=None):
+            def __comboBoxCb(self, event=None):
             self.__subdf = self.__df.loc[self.__df['COMMUNITY AREA NAME'] == self.__Cities_List.get()]
         print(self.__subdf.head())
         fig1 = Figure(figsize=(self.__GLineEdit_392.winfo_width, self.__GLineEdit_392.winfo_height), dpi=100)
