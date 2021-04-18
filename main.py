@@ -13,7 +13,6 @@ class App:
     def __init__(self, root,OriginalDataSet):
         self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
         self.OriginalDataSet=OriginalDataSet.dropna()
-        self.root=tk.Tk()
         OriginalDataSet.head()
         print(OriginalDataSet)
         # setting title
