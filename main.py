@@ -1,4 +1,5 @@
 import pandas as pd
+import pandas
 import matplotlib.pyplot as plt
 import numpy as np
 import tkinter as tk
