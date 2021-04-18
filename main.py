@@ -111,13 +111,13 @@ class Plot:
 
 
         #Establishing labels for x and y axes
-                for ax in axs.flat:
-                ax.set(xlabel='Months', ylabel='Consumption')
+                    for ax in axs.flat:
+                    ax.set(xlabel='Months', ylabel='Consumption')
 
 
         #Making x axis invisible
-                for ax in axs.flat:
-                ax.label_outer()
+                    for ax in axs.flat:
+                    ax.label_outer()
 
         Monthly_KWH_Average.plot(x,y)
         plt.show() 
