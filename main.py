@@ -153,14 +153,13 @@ self.__Monthly_KWH_Average = tk.Canvas(root)
 self.__Monthly_KWH_Average.place(x=50, y=130, width=234, height=140)
 Monthly_KWH_Average.draw()
 
-        self.__GLineEdit_985 = tk.Canvas(root)
-        self.__GLineEdit_985.place(x=310, y=130, width=239, height=139)
+    #    self.__GLineEdit_985 = tk.Canvas(root)
+    #    self.__GLineEdit_985.place(x=310, y=130, width=239, height=139)
+    #    self.__GLineEdit_392 = tk.Canvas(root)
+    #    self.__GLineEdit_392.place(x=50, y=290, width=233, height=157)
 
-        self.__GLineEdit_392 = tk.Canvas(root)
-        self.__GLineEdit_392.place(x=50, y=290, width=233, height=157)
-
-        self.__GLineEdit_700 = tk.Canvas(root)
-        self.__GLineEdit_700.place(x=310, y=290, width=234, height=158)
+    #    self.__GLineEdit_700 = tk.Canvas(root)
+    #    self.__GLineEdit_700.place(x=310, y=290, width=234, height=158)
 
         def __Load_CSV_command(self):
             filePath = fd.askopenfilename(initialdir='.')
