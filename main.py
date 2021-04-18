@@ -91,10 +91,11 @@ class Plot:
             self.fig = fig
 
             
-        def OriginalDataSet(self,root):    
+        def OriginalDataSet(self,root,fig):    
             self.root= OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
             self.OriginalDataSet=OriginalDataSet.dropna()
             OriginalDataSet.head()
+            self.fig=fig
             print(OriginalDataSet)
 
         #Creating a Monthly KWH Average Class
