@@ -145,7 +145,7 @@ class Plot:
         self.__GLineEdit_700 = tk.Canvas(root)
         self.__GLineEdit_700.place(x=310, y=290, width=234, height=158)
 
-    def __Load_CSV_command(self):
+        def __Load_CSV_command(self,root):
         filePath = fd.askopenfilename(initialdir='.')
         try:
             self.__df = pd.read_csv(filePath)
