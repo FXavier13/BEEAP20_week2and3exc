@@ -98,7 +98,9 @@ class Plot:
 
         #Creating a Monthly KWH Average Class
             class Monthly_KWH_Average('Energy_Usage_2010.csv'):
-
+                x=[i**2 for i in range (101)]
+                y=[i**2 for i in range (101)]
+                axs=axes x and y
 
         #Monthly KWH Canvas
                 plt.hist(OriginalDataSet.Monthly_KWH_Average,bins=100,density=True,histtype='bar')
