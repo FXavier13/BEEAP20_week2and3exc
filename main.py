@@ -161,11 +161,11 @@ class Plot:
     # top right: bar chart, average THERM by month
     # bottom left and bottom right up to you
         def __comboBoxCb(self, event=None):
-        self.__subdf = self.__df.loc[self.__df['COMMUNITY AREA NAME'] == self.__Cities_List.get()]
-        print(self.__subdf.head())
-        fig1 = Figure(figsize=(self.__GLineEdit_392.winfo_width, self.__GLineEdit_392.winfo_height), dpi=100)
-        ax1 = fig1.add_subplot(111)
-        self.__subdf.iloc[:, range(self.__subdf.columns.get_loc['KWH JANUARY 2010'], 12)].mean().plot.bar(ax=ax1)
+            self.__subdf = self.__df.loc[self.__df['COMMUNITY AREA NAME'] == self.__Cities_List.get()]
+            print(self.__subdf.head())
+            fig1 = Figure(figsize=(self.__GLineEdit_392.winfo_width, self.__GLineEdit_392.winfo_height), dpi=100)
+            ax1 = fig1.add_subplot(111)
+            self.__subdf.iloc[:, range(self.__subdf.columns.get_loc['KWH JANUARY 2010'], 12)].mean().plot.bar(ax=ax1)
 
 
 if __name__ == "__main__":
