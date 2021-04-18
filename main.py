@@ -7,7 +7,7 @@ from tkinter import ttk
 from tkinter import filedialog as fd
 import tkinter.font as tkFont
 
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
+from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
 from matplotlib.figure import Figure
 
 class App:
@@ -76,7 +76,8 @@ class App:
 
 
         #Creating the Plot Function Class
-        def plot():
+class Plot:
+        def __init__(self, root): 
             fig=Figure(figsize=(3,3),dpi=100)
             fig, axs = plt.subplots(2, 2,sharex=True)
             fig.suptitle('Energy Usage Summary')
