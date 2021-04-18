@@ -119,7 +119,7 @@ class Plot:
                 for ax in axs.flat:
                     ax.label_outer()
 
-        Monthly_KWH_Average.plot(x,y)
+        #Monthly_KWH_Average.plot(x,y)
         plt.show() 
 
         self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
