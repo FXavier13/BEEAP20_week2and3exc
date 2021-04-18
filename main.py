@@ -84,10 +84,10 @@ class App:
             y=np.linspace(100,2000,num=200)
 
         #Monthly KWH Canvas
-        plt.hist(OriginalDataSet.Monthly KWH Average',bins=100,density=True,histtype='bar',color='#4257f5')
+        plt.hist(OriginalDataSet.Monthly_KWH_Average',bins=100,density=True,histtype='bar',color='#4257f5')
         axs[0, 0].plot(x, y,color='#4257f5')
         axs[0, 0].set_title('Monthly KWH Average')
-        Monthly KWH Average = fig.add_subplot(111)
+        Monthly_KWH_Average = fig.add_subplot(111)
 
 
         #Establishing labels for x and y axes
@@ -99,7 +99,7 @@ class App:
         for ax in axs.flat:
         ax.label_outer()
 
-        Monthly KWH Average.plot(x,y)
+        Monthly_KWH_Average.plot(x,y)
         plt.show() 
 
         self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
