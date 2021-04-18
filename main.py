@@ -13,8 +13,10 @@ from matplotlib.figure import Figure
 class App:
     def __init__(self, root):
         # setting title
-        self.root = Energy_Usage_2010
+        self.root = OriginalDataSet=pd.read_csv('Energy_Usage_2010.csv')
+        self.root = OriginalDataSet = OriginalDataSet.dropna()
         root.title("Energy Usage 2010")
+        
         # setting window size
         width = 650
         height = 500
