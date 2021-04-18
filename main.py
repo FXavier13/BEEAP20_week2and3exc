@@ -118,9 +118,7 @@ class Plot:
         #Making x axis invisible
                 for ax in axs.flat:
                     ax.label_outer()
-
-        #Monthly_KWH_Average.plot(x,y)
-        plt.show() 
+plt.show() 
 
         self.__Monthly_KWH_Average = FigureCanvasTkAgg(fig,self = root)
         self.__Monthly_KWH_Average = tk.Canvas(root)
